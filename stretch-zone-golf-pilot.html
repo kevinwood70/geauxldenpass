@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stretch Zone | Golf Performance Pilot</title>
+  <meta name="description" content="A one-page Stretch Zone marketing piece for a golf mobility pilot." />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root{
+      --green:#0f5132;
+      --green-2:#1f7a4d;
+      --gold:#c8a24a;
+      --cream:#f7f3ea;
+      --ink:#142018;
+      --muted:#526156;
+      --card:#ffffff;
+      --line:rgba(20,32,24,.10);
+      --shadow:0 18px 50px rgba(20,32,24,.10);
+      --radius:24px;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#f5f1e7 0%, #fcfbf8 45%, #ffffff 100%);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}
+    body{line-height:1.5}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:24px}
+    .hero{
+      position:relative;overflow:hidden;border-radius:32px;background:
+      radial-gradient(circle at top right, rgba(200,162,74,.22), transparent 28%),
+      linear-gradient(135deg, #123f2b 0%, #0f5132 45%, #164e36 100%);
+      color:#fff;box-shadow:var(--shadow);
+    }
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:44px}
+    .eyebrow{display:inline-block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;padding:8px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.08)}
+    h1{margin:14px 0 10px;font-size:clamp(34px,5vw,58px);line-height:1.02;letter-spacing:-.03em}
+    .sub{font-size:clamp(17px,2vw,21px);color:rgba(255,255,255,.9);max-width:720px}
+    .hero p{margin:0}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:999px;background:#fff;color:var(--green);font-weight:700;text-decoration:none}
+    .pill.alt{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.16)}
+    .hero-card{
+      background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);
+      border-radius:28px;padding:18px;backdrop-filter:blur(8px)
+    }
+    .hero-card svg{width:100%;height:auto;display:block}
+    section{margin-top:26px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:26px
+    }
+    h2{margin:0 0 12px;font-size:30px;letter-spacing:-.03em}
+    h3{margin:0 0 8px;font-size:21px;letter-spacing:-.02em}
+    .muted{color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .stat{background:linear-gradient(180deg,#fff, #fbfaf6);border:1px solid var(--line);border-radius:20px;padding:18px}
+    .stat strong{display:block;font-size:34px;line-height:1;margin-bottom:6px;color:var(--green)}
+    .small{font-size:13px;color:var(--muted)}
+    ul{margin:10px 0 0 0;padding-left:18px}
+    li{margin:8px 0}
+    .quote{
+      background:linear-gradient(180deg,#fff 0%, #f8f4eb 100%);
+      border:1px solid rgba(200,162,74,.35)
+    }
+    .path{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:12px
+    }
+    .step{padding:18px;border-radius:20px;background:#fbfbf9;border:1px solid var(--line)}
+    .step .num{
+      width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+      background:var(--green);color:#fff;font-weight:800;margin-bottom:10px
+    }
+    .banner{
+      padding:24px 26px;border-radius:28px;background:linear-gradient(135deg,#f6f0df,#fff9ea);
+      border:1px solid rgba(200,162,74,.35);box-shadow:var(--shadow)
+    }
+    .result-box{
+      display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center
+    }
+    .scorecard{
+      border:1px dashed rgba(20,32,24,.22);border-radius:24px;padding:18px;background:#fff
+    }
+    .score-row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+    .score-row:last-child{border-bottom:0}
+    .footer{
+      text-align:center;color:var(--muted);font-size:13px;padding:16px 0 32px
+    }
+    .tag{
+      display:inline-block;padding:7px 10px;border-radius:999px;background:#eef7f1;color:var(--green);font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase
+    }
+    .tight p{margin:.35rem 0}
+    @media (max-width: 920px){
+      .hero-grid,.grid-2,.result-box{grid-template-columns:1fr}
+      .grid-3,.stats,.path{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .wrap{padding:14px}
+      .hero-grid{padding:24px}
+      .grid-3,.stats,.path{grid-template-columns:1fr}
+      h2{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">Stretch Zone • Golf Performance Pilot</span>
+          <h1>Could better mobility help lower a golfer’s handicap?</h1>
+          <p class="sub">That is exactly what we would love to explore. Based on published Stretch Zone research showing improved mobility, reduced discomfort, and better day-to-day function after consistent practitioner-assisted stretching, golfers may experience freer rotation, less restriction, and more consistency in their swing.</p>
+          <div class="cta-row">
+            <span class="pill">For Jackson Champion</span>
+            <span class="pill alt">Pilot concept • real-world case example</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <svg viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a golfer and mobility arc">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#f7f3ea"/>
+                <stop offset="100%" stop-color="#dfeedd"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="680" height="520" rx="24" fill="url(#g1)" opacity=".95"/>
+            <ellipse cx="160" cy="420" rx="125" ry="30" fill="#b8d5b7"/>
+            <circle cx="504" cy="118" r="52" fill="#fff" stroke="#c8a24a" stroke-width="4"/>
+            <path d="M140 394 C188 302, 238 246, 328 225 C430 201, 493 230, 554 296" fill="none" stroke="#c8a24a" stroke-width="10" stroke-linecap="round" stroke-dasharray="14 16"/>
+            <path d="M300 206 l42 12 -24 33" fill="none" stroke="#c8a24a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="248" cy="166" r="30" fill="#163f2d"/>
+            <path d="M240 198 C219 230, 204 265, 198 325" fill="none" stroke="#163f2d" stroke-width="18" stroke-linecap="round"/>
+            <path d="M246 210 C286 248, 334 282, 392 316" fill="none" stroke="#163f2d" stroke-width="18" stroke-linecap="round"/>
+            <path d="M208 325 C186 372, 178 403, 181 449" fill="none" stroke="#163f2d" stroke-width="18" stroke-linecap="round"/>
+            <path d="M198 325 C240 359, 281 399, 332 455" fill="none" stroke="#163f2d" stroke-width="18" stroke-linecap="round"/>
+            <path d="M391 316 C455 257, 504 204, 556 144" fill="none" stroke="#6d7f73" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="573" cy="127" r="7" fill="#fff" stroke="#6d7f73" stroke-width="3"/>
+            <rect x="416" y="362" width="182" height="88" rx="20" fill="#ffffff" stroke="#d8e4d7"/>
+            <text x="438" y="394" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f5132">More turn</text>
+            <text x="438" y="422" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#0f5132">Less restriction</text>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <span class="tag">What the study found</span>
+      <h2>Published research gives us a credible starting point</h2>
+      <p class="muted">In a 30-day Stretch Zone study of adults new to practitioner-assisted stretching, participants followed a standardized protocol and reported measurable improvements in mobility and daily function.</p>
+      <div class="stats" style="margin-top:16px">
+        <div class="stat">
+          <strong>85%</strong>
+          <div>improved range of motion</div>
+        </div>
+        <div class="stat">
+          <strong>78%</strong>
+          <div>reported reduced pain or discomfort</div>
+        </div>
+        <div class="stat">
+          <strong>61%</strong>
+          <div>reported easier daily movement</div>
+        </div>
+        <div class="stat">
+          <strong>2–3x</strong>
+          <div>per week showed stronger gains than lower frequency</div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">This was not a golf-specific study, and it does not claim guaranteed handicap improvement. It does, however, provide a strong foundation for testing how improved mobility may affect golf performance in the real world.</p>
+    </section>
+
+    <section class="grid-2">
+      <div class="card tight">
+        <span class="tag">Why it matters for golf</span>
+        <h2>Mobility can influence the swing in meaningful ways</h2>
+        <p><strong>More rotation.</strong> Improved shoulder, thoracic, and hip mobility may help a golfer turn more freely through the backswing and follow-through.</p>
+        <p><strong>Less compensation.</strong> When a body is tight, golfers often create workarounds that affect sequencing, contact, and consistency.</p>
+        <p><strong>Less discomfort.</strong> Reduced tightness in the back, hips, and legs may help a golfer practice more comfortably and stay more consistent over a full round.</p>
+        <p><strong>Better repeatability.</strong> A body that moves more cleanly can make it easier to repeat a more efficient swing pattern.</p>
+      </div>
+      <div class="card quote">
+        <span class="tag">Simple takeaway</span>
+        <h2>It may not be a swing problem.</h2>
+        <p style="font-size:24px;line-height:1.35;margin:6px 0 14px"><strong>For many golfers, it may be a mobility problem disguised as a swing problem.</strong></p>
+        <p class="muted">The goal is not to rebuild someone’s swing. The goal is to remove physical limitations that may be holding their current swing back.</p>
+      </div>
+    </section>
+
+    <section class="grid-3">
+      <div class="card">
+        <h3>Potential benefit #1</h3>
+        <p><strong>Club path consistency</strong></p>
+        <p class="muted">Freer movement may support cleaner rotation and better body sequencing.</p>
+      </div>
+      <div class="card">
+        <h3>Potential benefit #2</h3>
+        <p><strong>Late-round endurance</strong></p>
+        <p class="muted">Less stiffness may help maintain mechanics deeper into the round.</p>
+      </div>
+      <div class="card">
+        <h3>Potential benefit #3</h3>
+        <p><strong>Practice quality</strong></p>
+        <p class="muted">A golfer who feels better may practice more often and with better intent.</p>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="result-box">
+        <div>
+          <span class="tag">Pilot concept</span>
+          <h2>A great first real-world example: Jackson Champion</h2>
+          <p>Jackson loves golf and is interested in trying Stretch Zone as a personal performance experiment. That makes this a great opportunity to create a simple, honest case example:</p>
+          <ul>
+            <li>Capture a starting point: handicap, flexibility limitations, comfort level, and how his body feels during golf.</li>
+            <li>Put him on a consistent assisted stretching plan.</li>
+            <li>Track what changes over time: mobility, comfort, recovery, and golf performance.</li>
+            <li>Document the experience and let the results speak for themselves.</li>
+          </ul>
+        </div>
+        <div class="scorecard">
+          <h3 style="margin-bottom:12px">Suggested tracking scorecard</h3>
+          <div class="score-row"><div>Starting handicap</div><div>______</div></div>
+          <div class="score-row"><div>Hip / shoulder mobility baseline</div><div>______</div></div>
+          <div class="score-row"><div>Rounds played during pilot</div><div>______</div></div>
+          <div class="score-row"><div>Reported stiffness before/after rounds</div><div>______</div></div>
+          <div class="score-row"><div>Notable swing or distance observations</div><div>______</div></div>
+          <div class="score-row"><div>Updated handicap after pilot</div><div>______</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <span class="tag">Suggested format</span>
+      <h2>How to run the pilot</h2>
+      <div class="path">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Baseline</h3>
+          <p class="muted">Initial stretch, mobility observations, and golf-specific conversation.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Protocol</h3>
+          <p class="muted">Stretch consistently for 30 days, ideally 2 to 3 times per week.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Track</h3>
+          <p class="muted">Note how the body feels, how the swing feels, and any score changes.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>Review</h3>
+          <p class="muted">Compare before and after and decide what the results actually show.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="card">
+        <span class="tag">Important note</span>
+        <h2>What we can say with integrity</h2>
+        <ul>
+          <li>Practitioner-assisted stretching may improve mobility and reduce restriction.</li>
+          <li>For golfers, that may translate into a freer, more repeatable swing.</li>
+          <li>That may contribute to better performance and possibly handicap improvement over time.</li>
+          <li>The pilot is meant to test the idea honestly, not overstate it.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">Opportunity</span>
+        <h2>Why this matters beyond one golfer</h2>
+        <p class="muted">If Jackson experiences meaningful improvement, this could become a strong and relatable example for other golfers who want to move better, feel better, and potentially play better.</p>
+        <p><strong>A simple question worth testing:</strong><br/>What happens when an avid golfer gives his body the mobility support his swing has been missing?</p>
+      </div>
+    </section>
+
+    <div class="footer">
+      Stretch Zone Golf Performance Pilot • One-page concept piece prepared for web sharing<br/>
+      Research-based foundation, golf-specific application to be tested through real-world results.
+    </div>
+  </div>
+</body>
+</html>
