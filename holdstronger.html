@@ -152,6 +152,18 @@
     opacity: 0.85;
     animation: fadeUp 0.8s 0.4s ease both;
   }
+  .hero-score-line {
+    display: block;
+    margin-top: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+    opacity: 1;
+    line-height: 1.05;
+    animation: fadeUp 0.8s 0.5s ease both;
+  }
 
   .hero-formula {
     margin-top: 40px;
@@ -428,6 +440,86 @@
   }
   .challenge-cta-text .rust { color: var(--rust); }
 
+  /* ── IRON SECONDS CALCULATOR ── */
+  .calc-section { background: #0d0d0d; padding: 110px 48px; position: relative; }
+  .calc-wrap { max-width: 620px; margin: 0 auto; text-align: center; }
+  .calc-card {
+    background: var(--steel);
+    border: 1px solid rgba(212,168,67,0.2);
+    border-radius: 8px;
+    padding: 40px 36px;
+    margin-top: 40px;
+  }
+  .calc-inputs {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 18px;
+    align-items: end;
+  }
+  .calc-field { text-align: left; }
+  .calc-field label {
+    display: block;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .calc-field input {
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 16px;
+    color: var(--white);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    transition: border-color 0.2s;
+  }
+  .calc-field input:focus { outline: none; border-color: var(--gold); }
+  .calc-field input::-webkit-outer-spin-button,
+  .calc-field input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+  .calc-field input[type=number] { -moz-appearance: textfield; }
+  .calc-op {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--smoke);
+    padding-bottom: 14px;
+  }
+  .calc-result {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(212,168,67,0.2);
+  }
+  .calc-result-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 9vw, 4.5rem);
+    color: var(--gold);
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-shadow: 0 0 24px rgba(212,168,67,0.35);
+    transition: transform 0.15s;
+  }
+  .calc-result-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 6px;
+  }
+  .calc-compare {
+    font-size: 0.82rem;
+    color: var(--smoke);
+    margin-top: 16px;
+    min-height: 20px;
+    line-height: 1.5;
+  }
+  .calc-compare b { color: var(--bone); font-weight: 500; }
+  .calc-compare .beat { color: var(--gold); }
+  .calc-cta { margin-top: 36px; }
+
   /* ── METHOD SECTION ── */
   .method-grid {
     display: grid;
@@ -480,6 +572,13 @@
     letter-spacing: 0.05em;
   }
   .highlight-desc { max-width: 400px; font-size: 0.95rem; line-height: 1.8; color: rgba(240,235,226,0.7); }
+  .highlight-tagline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    letter-spacing: 0.04em;
+    color: var(--gold);
+    margin-top: 4px;
+  }
 
   /* ── WHO IT'S FOR ── */
   .who-section { background: #141414; }
@@ -763,6 +862,32 @@
   }
   .logan-name { font-weight: 500; font-size: 0.9rem; color: var(--white); }
   .logan-title-small { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--smoke); }
+
+  /* Founding Athlete badge */
+  .founding-badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    background: rgba(212,168,67,0.15);
+    color: var(--gold);
+    margin-top: 8px;
+  }
+  /* Case-study journey strip */
+  .logan-journey {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin: 28px 0;
+    max-width: 440px;
+  }
+  .journey-cell { background: var(--steel); padding: 18px 20px; }
+  .journey-cell.full { grid-column: 1 / -1; }
+  .journey-label { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+  .journey-value { font-size: 0.92rem; line-height: 1.5; color: rgba(240,235,226,0.85); }
+  .logan-cta-row { margin-top: 32px; }
   .logan-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
   .logan-stat { background: var(--steel); padding: 24px; }
   .logan-stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--gold); line-height: 1; margin-bottom: 4px; }
@@ -983,6 +1108,15 @@
     color: var(--smoke);
   }
   .lb-coming b { color: var(--rust); font-weight: 500; }
+  .movement-tag {
+    text-align: center;
+    margin-top: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+  }
+  .movement-tag .hash { color: var(--smoke); }
 
   /* ── APP MOCKUP ── */
   .app-section {
@@ -1291,9 +1425,11 @@
     .pillars-grid { grid-template-columns: 1fr 1fr; }
     .ws-row { grid-template-columns: 1fr; gap: 0; }
     .logan-inner { grid-template-columns: 1fr; gap: 40px; }
+    .logan-journey { max-width: none; }
     .app-inner { grid-template-columns: 1fr; gap: 48px; justify-items: center; text-align: center; }
     .app-feature { text-align: left; }
     .challenge-section, .leaderboard-section, .app-section { padding-left: 24px; padding-right: 24px; }
+    .calc-section { padding-left: 24px; padding-right: 24px; }
     .phone { width: 270px; height: 558px; }
     .youtube-shorts-wrapper { width: 100%; max-width: 320px; margin: 0 auto; }
     .hero-bottom { gap: 24px; flex-wrap: wrap; }
@@ -1317,6 +1453,7 @@
   <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
   <nav class="nav-links" id="navLinks">
     <a href="#challenge">Challenge</a>
+    <a href="#calculator">Calculator</a>
     <a href="#method">Method</a>
     <a href="#who">Who It's For</a>
     <a href="#benefits">Benefits</a>
@@ -1331,25 +1468,26 @@
   <div class="hero-bg"></div>
   <div></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Faith-Based Strength Training</div>
+    <div class="hero-eyebrow">The Faith-Based Strength Movement</div>
     <h1 class="hero-title">
       Hold
       <span class="accent">Stronger.</span>
     </h1>
     <p class="hero-subtitle">
-      A new kind of strength platform built around loaded holds, measurable progress, and the belief that true strength comes from Christ.
+      Can you earn 10,000 Iron Seconds? Join the faith-based strength movement built around loaded holds, measurable progress, and relentless discipline.
+      <span class="hero-score-line">Your strength now has a score.</span>
     </p>
 
     <div class="hero-formula">
       <div>
         <div class="formula-text">Load × Time = Iron Seconds</div>
-        <div class="formula-label">A simple system that makes strength measurable</div>
+        <div class="formula-label">A challenge anyone can join</div>
       </div>
     </div>
 
     <div class="hero-cta">
-      <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
-      <a href="#method" class="btn-ghost">Learn the Method</a>
+      <a href="#challenge" class="btn-primary">Take the Challenge</a>
+      <a href="#calculator" class="btn-ghost">Calculate Your Score</a>
     </div>
   </div>
 
@@ -1417,7 +1555,42 @@
 
     <div class="challenge-cta">
       <div class="challenge-cta-text">Can you <span class="rust">beat it?</span></div>
-      <a href="#waitlist" class="btn-primary">Take the Challenge</a>
+      <a href="#calculator" class="btn-primary">Calculate Your Iron Seconds</a>
+    </div>
+  </div>
+</section>
+
+<!-- IRON SECONDS CALCULATOR -->
+<section class="calc-section" id="calculator">
+  <div class="calc-wrap">
+    <div class="section-label">Iron Seconds Calculator</div>
+    <h2 class="section-title">Run The Numbers.</h2>
+    <p class="section-intro" style="margin: 0 auto;">
+      Every second under load counts. Enter a weight and a hold time to see your score. This is the math behind the movement.
+    </p>
+
+    <div class="calc-card">
+      <div class="calc-inputs">
+        <div class="calc-field">
+          <label for="calcLoad">Load (lbs)</label>
+          <input type="number" id="calcLoad" value="100" min="0" inputmode="numeric"/>
+        </div>
+        <div class="calc-op">×</div>
+        <div class="calc-field">
+          <label for="calcTime">Time (sec)</label>
+          <input type="number" id="calcTime" value="30" min="0" inputmode="numeric"/>
+        </div>
+      </div>
+
+      <div class="calc-result">
+        <div class="calc-result-num" id="calcResult">3,000</div>
+        <div class="calc-result-label">Iron Seconds</div>
+        <div class="calc-compare" id="calcCompare"></div>
+      </div>
+
+      <div class="calc-cta">
+        <a href="#waitlist" class="btn-primary">Join the Waitlist to Track Your Score</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1453,7 +1626,10 @@
       <p class="step-desc">Descending load sets push past the point of ordinary training. One month. Visible results. Real transformation.</p>
     </div>
     <div class="method-highlight">
-      <div class="highlight-formula">Load × Time = Iron Seconds</div>
+      <div>
+        <div class="highlight-formula">Load × Time = Iron Seconds</div>
+        <div class="highlight-tagline">Strength Has A Score.</div>
+      </div>
       <p class="highlight-desc">A 150lb person holding longer can outscore a 220lb person holding less. Iron Seconds levels the playing field and creates competition anyone can join — regardless of where they start.</p>
     </div>
   </div>
@@ -1706,18 +1882,43 @@
 <section class="logan-section" id="proof">
   <div class="logan-inner">
     <div>
-      <div class="section-label">The Proof</div>
+      <div class="section-label">The First Founding Athlete</div>
       <p class="logan-quote">"People keep asking me what I'm doing. One month in and <em>everything has changed.</em>"</p>
       <div class="logan-meta">
         <div class="logan-avatar">L</div>
         <div>
           <div class="logan-name">Logan</div>
-          <div class="logan-title-small">First HoldStronger Athlete · Austin, TX</div>
+          <div class="logan-title-small">Founding Athlete · Austin, TX</div>
+          <span class="founding-badge">★ Founding Athlete</span>
         </div>
       </div>
+
+      <div class="logan-journey">
+        <div class="journey-cell">
+          <div class="journey-label">Starting Point</div>
+          <div class="journey-value">New to loaded holds. No baseline, no score.</div>
+        </div>
+        <div class="journey-cell">
+          <div class="journey-label">One Month In</div>
+          <div class="journey-value">Visible change. People started noticing.</div>
+        </div>
+        <div class="journey-cell">
+          <div class="journey-label">Founders Sequence</div>
+          <div class="journey-value">120 → 110 → 100 → 90 lbs, descending holds.</div>
+        </div>
+        <div class="journey-cell">
+          <div class="journey-label">Iron Seconds</div>
+          <div class="journey-value" style="color:var(--gold);">10,060 — the founding mark.</div>
+        </div>
+      </div>
+
       <p style="font-size:0.9rem; line-height:1.8; color:rgba(240,235,226,0.6); max-width:440px;">
-        Started with loaded holds just over a month ago. Each session ramps up with two easy warm-up holds, then runs a descending working sequence — starting heavy and stepping the weight down hold by hold. The results speak for themselves.
+        Logan is athlete number one — the first proof that the method works. His Founders Sequence set the mark everyone else is chasing. Every second under load counted, and it shows.
       </p>
+
+      <div class="logan-cta-row">
+        <a href="#waitlist" class="btn-primary">Be the Next Founding Athlete</a>
+      </div>
     </div>
     <!-- SWAP VIDEO: replace the embed URL below with your final video -->
     <div class="youtube-shorts-wrapper">
@@ -1846,7 +2047,7 @@
     <div class="section-label" style="text-align:center;">Iron Seconds Leaderboard</div>
     <h2 class="section-title" style="text-align:center;">Where Do You Rank?</h2>
     <p class="section-intro" style="text-align:center; margin: 0 auto;">
-      Every hold is scored. Every second counts. Iron Seconds creates a level playing field — a 150 lb athlete who holds longer can outscore a 220 lb athlete who holds less.
+      A challenge anyone can join. Every second under load counts, and Iron Seconds levels the playing field — a 150 lb athlete who holds longer can outscore a 220 lb athlete who holds less. Your strength now has a score.
     </p>
 
     <table class="leaderboard-table">
@@ -1885,60 +2086,46 @@
               <div class="lb-avatar">L</div>
               <div>
                 <div class="lb-name">Logan</div>
-                <div class="lb-tag">Founder · Austin, TX &nbsp;<span class="lb-badge gold">Founding Athlete</span></div>
+                <div class="lb-tag">Austin, TX &nbsp;<span class="lb-badge gold">Founding Athlete</span></div>
               </div>
             </div>
           </td>
           <td class="lb-score">
-            <div class="lb-score-num">8,420</div>
+            <div class="lb-score-num">10,060</div>
             <div class="lb-score-label">Iron Seconds</div>
           </td>
         </tr>
-        <tr class="lb-row">
+
+        <!-- Open founding athlete slots -->
+        <tr class="lb-row" style="opacity:0.6;">
           <td><div class="lb-rank">3</div></td>
           <td>
             <div class="lb-athlete">
-              <div class="lb-avatar">K</div>
+              <div class="lb-avatar" style="background:#222; border:1px dashed rgba(212,168,67,0.3); color:var(--gold);">+</div>
               <div>
-                <div class="lb-name">Kevin</div>
-                <div class="lb-tag">Co-Founder · Austin, TX &nbsp;<span class="lb-badge gold">Founding Athlete</span></div>
+                <div class="lb-name" style="color:rgba(240,235,226,0.7);">Open Slot</div>
+                <div class="lb-tag">Founding Athlete — claim it</div>
               </div>
             </div>
           </td>
           <td class="lb-score">
-            <div class="lb-score-num">7,980</div>
+            <div class="lb-score-num" style="color:var(--smoke);">—</div>
             <div class="lb-score-label">Iron Seconds</div>
           </td>
         </tr>
-        <tr class="lb-row">
+        <tr class="lb-row" style="opacity:0.6;">
           <td><div class="lb-rank">4</div></td>
           <td>
             <div class="lb-athlete">
-              <div class="lb-avatar" style="background:var(--rust);">S</div>
+              <div class="lb-avatar" style="background:#222; border:1px dashed rgba(212,168,67,0.3); color:var(--gold);">+</div>
               <div>
-                <div class="lb-name">Sarah M.</div>
-                <div class="lb-tag">Dallas, TX</div>
+                <div class="lb-name" style="color:rgba(240,235,226,0.7);">Open Slot</div>
+                <div class="lb-tag">Founding Athlete — claim it</div>
               </div>
             </div>
           </td>
           <td class="lb-score">
-            <div class="lb-score-num">6,770</div>
-            <div class="lb-score-label">Iron Seconds</div>
-          </td>
-        </tr>
-        <tr class="lb-row">
-          <td><div class="lb-rank">5</div></td>
-          <td>
-            <div class="lb-athlete">
-              <div class="lb-avatar" style="background:#3a3a5c;">J</div>
-              <div>
-                <div class="lb-name">James R.</div>
-                <div class="lb-tag">Nashville, TN</div>
-              </div>
-            </div>
-          </td>
-          <td class="lb-score">
-            <div class="lb-score-num">5,910</div>
+            <div class="lb-score-num" style="color:var(--smoke);">—</div>
             <div class="lb-score-label">Iron Seconds</div>
           </td>
         </tr>
@@ -1970,6 +2157,10 @@
     </p>
 
     <p class="lb-coming">The app launches soon. <b>Your Iron Seconds start on day one.</b></p>
+    <div style="text-align:center; margin-top:28px;">
+      <a href="#waitlist" class="btn-primary">Claim Your Spot</a>
+    </div>
+    <div class="movement-tag"><span class="hash">#</span>WhatsYourIS</div>
   </div>
 </section>
 
@@ -1977,6 +2168,7 @@
 <section class="bms-section">
   <div class="section-label" style="text-align:center;">The Whole Athlete</div>
   <h2 class="section-title" style="text-align:center;">Body. Mind. Spirit.</h2>
+  <p class="section-intro" style="text-align:center; margin:0 auto 8px;">Train the body. Strengthen the mind. Anchor the spirit.</p>
   <div class="bms-grid">
     <div class="bms-card">
       <h3>Body</h3>
@@ -2188,6 +2380,37 @@
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
   });
+
+  // ── Iron Seconds Calculator ──
+  const calcLoad = document.getElementById('calcLoad');
+  const calcTime = document.getElementById('calcTime');
+  const calcResult = document.getElementById('calcResult');
+  const calcCompare = document.getElementById('calcCompare');
+  const FOUNDERS_MARK = 10060;
+
+  function updateCalc() {
+    const load = Math.max(0, parseFloat(calcLoad.value) || 0);
+    const time = Math.max(0, parseFloat(calcTime.value) || 0);
+    const score = Math.round(load * time);
+    calcResult.textContent = score.toLocaleString();
+    // little pop animation
+    calcResult.style.transform = 'scale(1.06)';
+    setTimeout(() => { calcResult.style.transform = 'scale(1)'; }, 120);
+    // compare to founders mark
+    if (score === 0) {
+      calcCompare.innerHTML = '';
+    } else if (score >= FOUNDERS_MARK) {
+      calcCompare.innerHTML = `<span class="beat">🔥 That beats Logan's Founders mark of ${FOUNDERS_MARK.toLocaleString()}!</span>`;
+    } else {
+      const pct = Math.round((score / FOUNDERS_MARK) * 100);
+      calcCompare.innerHTML = `That's <b>${pct}%</b> of Logan's Founders mark (${FOUNDERS_MARK.toLocaleString()} Iron Seconds).`;
+    }
+  }
+  if (calcLoad && calcTime) {
+    calcLoad.addEventListener('input', updateCalc);
+    calcTime.addEventListener('input', updateCalc);
+    updateCalc();
+  }
 </script>
 </body>
 </html>
