@@ -63,8 +63,25 @@
       font-size:clamp(15px,2vw,17px);line-height:1.6;
     }
 
+    /* ---------- recipients ---------- */
+    .recipients{margin-top:30px;text-align:center}
+    .kicker.center{text-align:center}
+    .names{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    @media (max-width:600px){.names{grid-template-columns:1fr}}
+    .namecard{
+      padding:16px 12px;border:1px solid var(--line);border-radius:14px;
+      background:linear-gradient(180deg,rgba(247,226,150,.07),rgba(247,226,150,.02));
+    }
+    .rlabel{font-size:10.5px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--g-2);margin:0 0 7px}
+    .rname{
+      font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:clamp(18px,3vw,25px);line-height:1.05;margin:0;
+      background:linear-gradient(176deg,var(--g-hi),var(--g-2) 62%,var(--g-edge));
+      -webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 1px 0 rgba(0,0,0,.25);
+    }
+    .rsub{font-style:italic;font-weight:500;letter-spacing:.05em;color:var(--muted);font-size:14px;margin:16px 0 0}
+
     /* ---------- content ---------- */
-    .below{margin-top:34px;display:grid;gap:20px}
+    .below{margin-top:20px;display:grid;gap:20px}
     @media (min-width:861px){.below{grid-template-columns:1.25fr .75fr;align-items:start}}
     .panel{
       background:linear-gradient(180deg,rgba(247,226,150,.05),rgba(247,226,150,.02));
@@ -119,6 +136,21 @@
       <p class="lede">A lifetime of stretches. A token of gratitude. Blessings returned through service and honor.</p>
     </header>
 
+    <section class="panel recipients">
+      <p class="kicker center">Issued To &mdash; Lifetime Pass Holders</p>
+      <div class="names">
+        <div class="namecard">
+          <p class="rlabel">Recipient</p>
+          <p class="rname">Pastor Joe Champion</p>
+        </div>
+        <div class="namecard">
+          <p class="rlabel">Recipient</p>
+          <p class="rname">Pastor Lori Champion</p>
+        </div>
+      </div>
+      <p class="rsub">&infin; Authorized Lifetime Access &infin;</p>
+    </section>
+
     <div class="below">
       <section class="panel">
         <p class="kicker">Featured Message</p>
@@ -143,6 +175,7 @@
           <p class="sub">If you have questions, please contact the issuing team below.</p>
         </div>
         <div class="ledger">
+          <div class="row"><p class="k">Valid for</p><p class="v">Pastor Joe &amp; Lori Champion</p></div>
           <div class="row"><p class="k">Issued by</p><p class="v">Stretch Zone Austin</p></div>
           <div class="row"><p class="k">Presented by</p><p class="v">Kevin &amp; Kimberly Wood</p></div>
           <div class="row"><p class="k">Entity</p><p class="v">KKW-SZ Enterprises</p></div>
