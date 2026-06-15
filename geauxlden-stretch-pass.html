@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Geauxlden Stretch Pass - Champion Edition</title>
+  <meta name="description" content="Honor details and validation for The Geauxlden Stretch Pass." />
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400..800;1,14..32,400..600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --noir:#15140F;
+      --ink:#171206;
+      --teal:#37C4D4;
+      --cream:#EFE6CC;
+      --muted:#B7A988;
+      --g-hi:#F6E29A;
+      --g-1:#E7C96E;
+      --g-2:#D2AB47;
+      --g-3:#B98E2E;
+      --g-edge:#8E6C1E;
+      --line:rgba(247,226,150,.16);
+    }
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      margin:0;
+      font-family:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--cream);
+      background-color:#100F0B;
+      background-image:
+        radial-gradient(120% 90% at 50% -10%, rgba(210,171,71,.16), rgba(210,171,71,0) 55%),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.012) 0 2px, rgba(0,0,0,.05) 2px 64px),
+        linear-gradient(180deg, #17150F 0%, #100F0B 100%);
+      background-attachment:fixed;
+      line-height:1.6;
+      font-size:17px;
+    }
+    .shell{width:min(1080px,100%);margin:0 auto;padding:40px 18px 60px}
+
+    /* ---------- header ---------- */
+    .masthead{text-align:center;padding:8px 0 14px}
+    .eyebrow{
+      font-size:11px;font-weight:600;letter-spacing:.4em;text-transform:uppercase;
+      color:var(--teal);margin:0 0 18px;padding-left:.4em;
+    }
+    .masthead h1{
+      font-weight:800;letter-spacing:.02em;text-transform:uppercase;
+      font-size:clamp(30px,6.4vw,60px);line-height:1.02;margin:0;
+      background:linear-gradient(176deg,var(--g-hi) 0%,#E2BE5E 42%,var(--g-2) 64%,var(--g-edge) 100%);
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+      text-shadow:0 1px 0 rgba(0,0,0,.3);
+    }
+    .masthead .edition{
+      font-style:italic;font-weight:500;letter-spacing:.22em;text-transform:uppercase;
+      font-size:clamp(13px,2.4vw,17px);color:var(--muted);margin:12px 0 0;
+    }
+    .masthead .lede{
+      max-width:560px;margin:16px auto 0;color:var(--muted);
+      font-size:clamp(15px,2vw,17px);line-height:1.6;
+    }
+
+    /* ---------- content ---------- */
+    .below{margin-top:34px;display:grid;gap:20px}
+    @media (min-width:861px){.below{grid-template-columns:1.25fr .75fr;align-items:start}}
+    .panel{
+      background:linear-gradient(180deg,rgba(247,226,150,.05),rgba(247,226,150,.02));
+      border:1px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,30px);
+    }
+    .panel h2{
+      font-size:clamp(19px,2.4vw,23px);font-weight:700;letter-spacing:.01em;margin:0 0 4px;color:var(--cream);
+    }
+    .kicker{font-size:11px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--g-2);margin:0 0 6px}
+    .video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;border:1px solid var(--line);margin-top:14px}
+    .video iframe{position:absolute;inset:0;width:100%;height:100%}
+    .caption{font-size:13.5px;color:var(--muted);line-height:1.55;margin:12px 2px 0}
+
+    .provisions{margin-top:18px}
+    .prov{display:grid;grid-template-columns:120px 1fr;gap:6px 16px;padding:13px 0;border-top:1px solid rgba(247,226,150,.1)}
+    .prov:first-child{border-top:0}
+    .prov .k{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--g-2)}
+    .prov .v{color:var(--cream)}
+    @media (max-width:480px){.prov{grid-template-columns:1fr;gap:2px}}
+
+    .stamp{border:1px solid rgba(247,226,150,.3);border-radius:12px;padding:15px 16px;text-align:center;background:linear-gradient(180deg,rgba(247,226,150,.08),rgba(247,226,150,.02))}
+    .stamp .big{font-weight:700;font-size:18px;margin:0;color:var(--cream)}
+    .stamp .sub{font-size:13.5px;color:var(--muted);margin:7px 0 0;line-height:1.5}
+    .ledger{margin-top:6px}
+    .row{padding:12px 0;border-top:1px solid rgba(247,226,150,.1)}
+    .row:first-child{border-top:0}
+    .row .k{font-size:10.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--g-2);margin:0 0 3px}
+    .row .v{font-weight:600;font-size:17px;margin:0;color:var(--cream)}
+    .btnrow{display:grid;gap:10px;margin-top:16px}
+    a.btn{display:flex;align-items:center;justify-content:center;text-decoration:none;border:1px solid var(--g-edge);padding:12px 14px;border-radius:11px;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;transition:all .18s ease}
+    a.btn.primary{background:linear-gradient(180deg,var(--g-hi),var(--g-2));color:#241B07}
+    a.btn.ghost{background:transparent;color:var(--cream)}
+    a.btn:hover{transform:translateY(-1px)}
+    a.btn.ghost:hover{background:rgba(247,226,150,.08)}
+    a.btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+    .note{font-size:13px;color:var(--muted);line-height:1.55;margin-top:13px}
+
+    footer{text-align:center;color:var(--muted);font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:40px}
+    a{color:var(--g-1)}
+
+    @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+    @media print{body{background:#fff}a.btn{display:none}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+
+    <header class="masthead">
+      <p class="eyebrow">Validation &amp; Honor Details</p>
+      <h1>The Geauxlden<br>Stretch Pass</h1>
+      <p class="edition">Champion Edition</p>
+      <p class="lede">A lifetime of stretches. A token of gratitude. Blessings returned through service and honor.</p>
+    </header>
+
+    <div class="below">
+      <section class="panel">
+        <p class="kicker">Featured Message</p>
+        <h2>It&rsquo;s Time to Stretch</h2>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/1HYapSHA1LU?start=1447" title="Stretch Message"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <p class="caption">Inspiration from the Celebration Church Legacy 2022 film based on Isaiah 54:2&mdash;calling us to stretch, grow, and step into what God has prepared.</p>
+
+        <div class="provisions">
+          <div class="prov"><div class="k">Access</div><div class="v">Authorized Lifetime Access across Stretch Zone studios nationwide</div></div>
+          <div class="prov"><div class="k">Service</div><div class="v">Assisted stretching sessions</div></div>
+          <div class="prov"><div class="k">Validity</div><div class="v">Honored as a lifetime pass</div></div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <p class="kicker">For Stretch Zone Studios</p>
+        <div class="stamp">
+          <p class="big">This is a valid lifetime pass.</p>
+          <p class="sub">If you have questions, please contact the issuing team below.</p>
+        </div>
+        <div class="ledger">
+          <div class="row"><p class="k">Issued by</p><p class="v">Stretch Zone Austin</p></div>
+          <div class="row"><p class="k">Presented by</p><p class="v">Kevin &amp; Kimberly Wood</p></div>
+          <div class="row"><p class="k">Entity</p><p class="v">KKW-SZ Enterprises</p></div>
+        </div>
+        <div class="btnrow">
+          <a class="btn primary" href="mailto:kevin@stretch512.com?subject=Geauxlden%20Stretch%20Pass%20Verification">Email for verification</a>
+          <a class="btn ghost" href="https://stretch512.com" target="_blank" rel="noreferrer">Stretch Zone Austin</a>
+        </div>
+        <p class="note">Note: This page is intended to confirm the honor and lifetime authorization of this pass.</p>
+      </aside>
+    </div>
+
+    <footer>&copy; <span id="y"></span> Stretch Zone Austin &bull; KKW-SZ Enterprises</footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
